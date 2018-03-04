@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ListingProductModel } from './common/model/listingentity.model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  public obj: ListingProductModel;
+  constructor() {
+    this.obj = new ListingProductModel(); console.log(this.obj); }
 }

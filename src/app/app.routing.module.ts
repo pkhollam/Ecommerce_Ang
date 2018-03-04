@@ -4,8 +4,8 @@ import {AppComponent} from './app.component';
 
 
 const appRoutes: Routes = [
-    { path: '/', component: AppComponent },
-    { path: '/app', component: AppComponent },
+    { path: '', component: AppComponent },
+    { path: 'app', component: AppComponent },
   ];
 
   @NgModule({
@@ -19,4 +19,4 @@ const appRoutes: Routes = [
       RouterModule
     ]
   })
-  export class AppRoutingModule {}
+  export class AppRoutingModule {  }
